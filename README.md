@@ -13,6 +13,6 @@ This Procedure does not violate SQL's constraints and brings some of it's own so
 - You may not import rows with different number of columns.
 
 ## Shortcomings
-Please do consider that if you intend to work with a large amount of data (say a million records or less considering the number of columns), or a normalized and effecient handling of such task please consult other guides or try SQL Server's own Import and Export Wizard that prompts you on each step on how do you want to handle things in order to get just the right result.
+Please do consider that if you intend to work with a large amount of data (say a million records or less considering the number of columns), or a normalized and effecient handling of such task please consult other guides or try SQL Server's own Import and Export Wizard that prompts you on each step on how do you want to handle things in order to get just the right result.\
 Inserting the way this script is trying to do is considered non-effecient and it could overuse a lot of unneccessary resources. There seems to be better alternatives such as BULK INSERT or OPEN ROWSET, which will be examined later maybe.
 Also for the sake of ease and comprehensiveness the data type for all columns no matter the formatting is chosen to be VARCHAR(MAX) which in some cases might be considered over the top. I have no plans for this yet since it hasn't caused me any issues yet.
